@@ -13,6 +13,10 @@
     box-sizing: inherit;
 }
 
+
+.app {
+    overflow: hidden;
+}
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
@@ -64,11 +68,33 @@ html {
 @keyframes fadeIn {
 
     from {
+        transform: scale(var(--size-header)/2);
+
         opacity: 0;
     }
 
     to {
+        transform: scale(var(--size-header));
+
         opacity: 1;
+
+    }
+}
+
+
+@keyframes fadeInSearch {
+
+    from {
+        opacity: 0;
+        top: calc(var(--size-header)/1.5);
+
+    }
+
+    to {
+        opacity: 1;
+
+        top: var((--size-header));
+
 
     }
 }
@@ -76,7 +102,7 @@ html {
 @keyframes growth {
 
     from {
-        transform: scale(0.7);
+        transform: scale(0);
     }
 
     to {
@@ -93,6 +119,7 @@ html {
     right: 0;
     left: 0;
     visibility: hidden;
+    z-index: 1;
 
 
 }

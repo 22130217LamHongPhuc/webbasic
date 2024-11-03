@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/css/basic.css">
     <link rel="stylesheet" href="asset/css/main.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
+    <link rel="stylesheet" href="asset/css/grid-layout">
+
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="asset/font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css">
 
@@ -14,9 +19,12 @@
 
 <body>
     <div class="app">
+
+        </label>
         <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
+            <div class="grid wide">
+
+                <nav class="header__navbar hide-on-tablet-mobile">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item  header__navbar-item--has-qr">Vào shop LP trên ứng dụng
 
@@ -74,6 +82,54 @@
                     </ul>
                 </nav>
                 <div class="header-body">
+                    <input type="checkbox" style="background-color: #FFD43B; display: none;"
+                    class="check__search" id="id-check__search">
+                <input type="checkbox" style="background-color: #FFD43B;display: none;" class="check__nav"
+                    id="id-check__nav">
+
+                    <div class="header-body-function">
+                        <label class="header-body__navigation-bar-mobile" for="id-check__nav">
+                            <i class="fa-solid fa-list header-body-function-icon" style="color: #ffffff;"></i>
+
+                        </label>
+
+                        <label class="header-body__search-mobile" for="id-check__search">
+                            <i class="fa-solid fa-magnifying-glass header-body-function-icon " style="color: #ffffff;">
+                            </i>
+                        </label>
+
+                       
+
+
+
+                    </div>
+
+
+
+
+
+
+                    <nav class="header__nav-mobile">
+                        <ul class="header__nav-list-mobile">
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Đăng ký </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#band" class="header__nav-link">Đăng nhập</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#tour" class="header__nav-link">Hỏi đáp</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#contact" class="header__nav-link">Trợ giúp</a>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+
+
+
                     <div class="header-body__logo">
 
                         <svg viewBox="0 0 192 65" class="header-body__logo-icon">
@@ -124,13 +180,15 @@
 
 
 
-
+                    <label class="overfly" for="id-check__nav"></label>
                     <div class="header-body__cart">
-                        <i class="fa-solid fa-cart-shopping header-body__cart-icon" style="color: #ffffff;">
+                        <i class="fa-solid fa-cart-shopping header-body__cart-icon"
+                            style="color: #ffffff; margin-left: -5px">
                             <span class="header-body__cart-quality">3</span>
 
                         </i>
                     </div>
+
 
                 </div>
             </div>
@@ -251,10 +309,32 @@
 
 
 
-        <div class="container" style="background-color: #ecf3f2;">
-            <div class="grid">
-                <div class="grid-row ">
-                    <div class="grid-col-2">
+        <div class="container">
+            <div class="grid wide">
+                <div class="category-mobile-tablet">
+                    <div class="row">
+                        <div class="col m-12 c-12">
+
+                            <ul class="category-list">
+                                <li class="category-item">Trang điểm mặt</li>
+                                <li class="category-item">Trang điểm </li>
+
+                                <li class="category-item">Trang điểm môi</li>
+                                <li class="category-item">Trang điểm body</li>
+
+                                <li class="category-item">Trang điểm mặt</li>
+                                <li class="category-item">Trang điểm </li>
+
+                                <li class="category-item">Trang điểm môi</li>
+                                <li class="category-item">Trang điểm body</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+
+                    <div class="col l-2 m-0 c-0">
                         <div class="category">
                             <h3 class="category__heading">
                                 <i class="fa-solid fa-list"></i> Dach sách
@@ -269,9 +349,9 @@
 
 
                     </div>
-                    <div class="grid-col-10">
+                    <div class="col l-10 m-12 c-12">
 
-                        <div class="home-filter">
+                        <div class="home-filter  ">
                             <div style="display: flex; margin-right: 10px;">
                                 <span class="home-filter__label">Sắp xếp theo</span>
 
@@ -320,527 +400,996 @@
                         </div>
 
                         <div class="home-product">
-                            <div class="grid-row">
-                                <div class="grid-col-10-2">
-    
-                                <div class="home-product-item">
-                                    <div class="home-product__item-img" style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);"></div>
-                                <h4 class="home-product-item__heading">
-                                    Sản phẩm làm trắng da 100%
-                                </h4>
-
-                                <div class="home-product-item-price">
-                                    <span class="home-product-item-price-original" >1.000.000
-                                        <span class="home-product-item-price-deparate"></span>
-                                    </span>
-                                    <span class="home-product-item-price-curremt">500.000</span>
 
 
-                                </div>
+                            <div class="row">
+                                <div class="col l-2-4 m-4 c-6">
 
-                                <div class="home-product-item-favourate">
-                                    <div class="home-product-item-heart">
-                                        <i class="fa-regular fa-heart" style="color: #df5920;"></i>
+                                    <div class="home-product-item">
+                                        <div class="home-product__item-img"
+                                            style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);">
+                                        </div>
+                                        <h4 class="home-product-item__heading">
+                                            Sản phẩm làm trắng da 100%
+                                        </h4>
+
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-original">1.000.000
+                                                <span class="home-product-item-price-deparate"></span>
+                                            </span>
+                                            <span class="home-product-item-price-curremt">500.000</span>
+
+
+                                        </div>
+
+                                        <div class="home-product-item-favourate">
+                                            <div class="home-product-item-heart">
+                                                <i class="fa-regular fa-heart"
+                                                    style="color: #df5920; margin-top: -1px; "></i>
+                                            </div>
+
+                                            <div class="home-product-item-start">
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <div>
+                                                    <p style="font-size: 1.2rem; margin: -3px 0 0 5px;">Đã bán 80</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="icon-favourate">
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="icon-discount">
+                                            <span class="icon-discount__label-percent">40%</span>
+                                            <span class="icon-discount__sale">Giảm</span>
+
+                                        </div>
                                     </div>
 
-                                    <div class="home-product-item-start">
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    </div>
-                                </div>
                                 </div>
 
+                                <div class="col l-2-4 m-4 c-6">
+
+                                    <div class="home-product-item">
+                                        <div class="home-product__item-img"
+                                            style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);">
+                                        </div>
+                                        <h4 class="home-product-item__heading">
+                                            Sản phẩm làm trắng da 100%
+                                        </h4>
+
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-original">1.000.000
+                                                <span class="home-product-item-price-deparate"></span>
+                                            </span>
+                                            <span class="home-product-item-price-curremt">500.000</span>
+
+
+                                        </div>
+
+                                        <div class="home-product-item-favourate">
+                                            <div class="home-product-item-heart">
+                                                <i class="fa-regular fa-heart"
+                                                    style="color: #df5920; margin-top: -1px; "></i>
+                                            </div>
+
+                                            <div class="home-product-item-start">
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <div>
+                                                    <p style="font-size: 1.2rem; margin: -3px 0 0 5px;">Đã bán 80</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="icon-favourate">
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="icon-discount">
+                                            <span class="icon-discount__label-percent">40%</span>
+                                            <span class="icon-discount__sale">Giảm</span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6 ">
+
+                                    <div class="home-product-item">
+                                        <div class="home-product__item-img"
+                                            style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);">
+                                        </div>
+                                        <h4 class="home-product-item__heading">
+                                            Sản phẩm làm trắng da 100%
+                                        </h4>
+
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-original">1.000.000
+                                                <span class="home-product-item-price-deparate"></span>
+                                            </span>
+                                            <span class="home-product-item-price-curremt">500.000</span>
+
+
+                                        </div>
+
+                                        <div class="home-product-item-favourate">
+                                            <div class="home-product-item-heart">
+                                                <i class="fa-regular fa-heart"
+                                                    style="color: #df5920; margin-top: -1px; "></i>
+                                            </div>
+
+                                            <div class="home-product-item-start">
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <div>
+                                                    <p style="font-size: 1.2rem; margin: -3px 0 0 5px;">Đã bán 80</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="icon-favourate">
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="icon-discount">
+                                            <span class="icon-discount__label-percent">40%</span>
+                                            <span class="icon-discount__sale">Giảm</span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+
+                                    <div class="home-product-item">
+                                        <div class="home-product__item-img"
+                                            style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);">
+                                        </div>
+                                        <h4 class="home-product-item__heading">
+                                            Sản phẩm làm trắng da 100%
+                                        </h4>
+
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-original">1.000.000
+                                                <span class="home-product-item-price-deparate"></span>
+                                            </span>
+                                            <span class="home-product-item-price-curremt">500.000</span>
+
+
+                                        </div>
+
+                                        <div class="home-product-item-favourate">
+                                            <div class="home-product-item-heart">
+                                                <i class="fa-regular fa-heart"
+                                                    style="color: #df5920; margin-top: -1px; "></i>
+                                            </div>
+
+                                            <div class="home-product-item-start">
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <div>
+                                                    <p style="font-size: 1.2rem; margin: -3px 0 0 5px;">Đã bán 80</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="icon-favourate">
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="icon-discount">
+                                            <span class="icon-discount__label-percent">40%</span>
+                                            <span class="icon-discount__sale">Giảm</span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+
+                                    <div class="home-product-item">
+                                        <div class="home-product__item-img"
+                                            style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);">
+                                        </div>
+                                        <h4 class="home-product-item__heading">
+                                            Sản phẩm làm trắng da 100%
+                                        </h4>
+
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-original">1.000.000
+                                                <span class="home-product-item-price-deparate"></span>
+                                            </span>
+                                            <span class="home-product-item-price-curremt">500.000</span>
+
+
+                                        </div>
+
+                                        <div class="home-product-item-favourate">
+                                            <div class="home-product-item-heart">
+                                                <i class="fa-regular fa-heart"
+                                                    style="color: #df5920; margin-top: -1px; "></i>
+                                            </div>
+
+                                            <div class="home-product-item-start">
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <div>
+                                                    <p style="font-size: 1.2rem; margin: -3px 0 0 5px;">Đã bán 80</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="icon-favourate">
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="icon-discount">
+                                            <span class="icon-discount__label-percent">40%</span>
+                                            <span class="icon-discount__sale">Giảm</span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+
+                                    <div class="home-product-item">
+                                        <div class="home-product__item-img"
+                                            style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);">
+                                        </div>
+                                        <h4 class="home-product-item__heading">
+                                            Sản phẩm làm trắng da 100%
+                                        </h4>
+
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-original">1.000.000
+                                                <span class="home-product-item-price-deparate"></span>
+                                            </span>
+                                            <span class="home-product-item-price-curremt">500.000</span>
+
+
+                                        </div>
+
+                                        <div class="home-product-item-favourate">
+                                            <div class="home-product-item-heart">
+                                                <i class="fa-regular fa-heart"
+                                                    style="color: #df5920; margin-top: -1px; "></i>
+                                            </div>
+
+                                            <div class="home-product-item-start">
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <div>
+                                                    <p style="font-size: 1.2rem; margin: -3px 0 0 5px;">Đã bán 80</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="icon-favourate">
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="icon-discount">
+                                            <span class="icon-discount__label-percent">40%</span>
+                                            <span class="icon-discount__sale">Giảm</span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+
+                                    <div class="home-product-item">
+                                        <div class="home-product__item-img"
+                                            style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);">
+                                        </div>
+                                        <h4 class="home-product-item__heading">
+                                            Sản phẩm làm trắng da 100%
+                                        </h4>
+
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-original">1.000.000
+                                                <span class="home-product-item-price-deparate"></span>
+                                            </span>
+                                            <span class="home-product-item-price-curremt">500.000</span>
+
+
+                                        </div>
+
+                                        <div class="home-product-item-favourate">
+                                            <div class="home-product-item-heart">
+                                                <i class="fa-regular fa-heart"
+                                                    style="color: #df5920; margin-top: -1px; "></i>
+                                            </div>
+
+                                            <div class="home-product-item-start">
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <div>
+                                                    <p style="font-size: 1.2rem; margin: -3px 0 0 5px;">Đã bán 80</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="icon-favourate">
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="icon-discount">
+                                            <span class="icon-discount__label-percent">40%</span>
+                                            <span class="icon-discount__sale">Giảm</span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6 ">
+
+                                    <div class="home-product-item">
+                                        <div class="home-product__item-img"
+                                            style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);">
+                                        </div>
+                                        <h4 class="home-product-item__heading">
+                                            Sản phẩm làm trắng da 100%
+                                        </h4>
+
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-original">1.000.000
+                                                <span class="home-product-item-price-deparate"></span>
+                                            </span>
+                                            <span class="home-product-item-price-curremt">500.000</span>
+
+
+                                        </div>
+
+                                        <div class="home-product-item-favourate">
+                                            <div class="home-product-item-heart">
+                                                <i class="fa-regular fa-heart"
+                                                    style="color: #df5920; margin-top: -1px; "></i>
+                                            </div>
+
+                                            <div class="home-product-item-start">
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <div>
+                                                    <p style="font-size: 1.2rem; margin: -3px 0 0 5px;">Đã bán 80</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="icon-favourate">
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="icon-discount">
+                                            <span class="icon-discount__label-percent">40%</span>
+                                            <span class="icon-discount__sale">Giảm</span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+
+                                    <div class="home-product-item">
+                                        <div class="home-product__item-img"
+                                            style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);">
+                                        </div>
+                                        <h4 class="home-product-item__heading">
+                                            Sản phẩm làm trắng da 100%
+                                        </h4>
+
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-original">1.000.000
+                                                <span class="home-product-item-price-deparate"></span>
+                                            </span>
+                                            <span class="home-product-item-price-curremt">500.000</span>
+
+
+                                        </div>
+
+                                        <div class="home-product-item-favourate">
+                                            <div class="home-product-item-heart">
+                                                <i class="fa-regular fa-heart"
+                                                    style="color: #df5920; margin-top: -1px; "></i>
+                                            </div>
+
+                                            <div class="home-product-item-start">
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <div>
+                                                    <p style="font-size: 1.2rem; margin: -3px 0 0 5px;">Đã bán 80</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="icon-favourate">
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="icon-discount">
+                                            <span class="icon-discount__label-percent">40%</span>
+                                            <span class="icon-discount__sale">Giảm</span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+
+                                    <div class="home-product-item">
+                                        <div class="home-product__item-img"
+                                            style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);">
+                                        </div>
+                                        <h4 class="home-product-item__heading">
+                                            Sản phẩm làm trắng da 100%
+                                        </h4>
+
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-original">1.000.000
+                                                <span class="home-product-item-price-deparate"></span>
+                                            </span>
+                                            <span class="home-product-item-price-curremt">500.000</span>
+
+
+                                        </div>
+
+                                        <div class="home-product-item-favourate">
+                                            <div class="home-product-item-heart">
+                                                <i class="fa-regular fa-heart"
+                                                    style="color: #df5920; margin-top: -1px; "></i>
+                                            </div>
+
+                                            <div class="home-product-item-start">
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <div>
+                                                    <p style="font-size: 1.2rem; margin: -3px 0 0 5px;">Đã bán 80</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="icon-favourate">
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="icon-discount">
+                                            <span class="icon-discount__label-percent">40%</span>
+                                            <span class="icon-discount__sale">Giảm</span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+
+                                    <div class="home-product-item">
+                                        <div class="home-product__item-img"
+                                            style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);">
+                                        </div>
+                                        <h4 class="home-product-item__heading">
+                                            Sản phẩm làm trắng da 100%
+                                        </h4>
+
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-original">1.000.000
+                                                <span class="home-product-item-price-deparate"></span>
+                                            </span>
+                                            <span class="home-product-item-price-curremt">500.000</span>
+
+
+                                        </div>
+
+                                        <div class="home-product-item-favourate">
+                                            <div class="home-product-item-heart">
+                                                <i class="fa-regular fa-heart"
+                                                    style="color: #df5920; margin-top: -1px; "></i>
+                                            </div>
+
+                                            <div class="home-product-item-start">
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <div>
+                                                    <p style="font-size: 1.2rem; margin: -3px 0 0 5px;">Đã bán 80</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="icon-favourate">
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="icon-discount">
+                                            <span class="icon-discount__label-percent">40%</span>
+                                            <span class="icon-discount__sale">Giảm</span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+
+                                    <div class="home-product-item">
+                                        <div class="home-product__item-img"
+                                            style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);">
+                                        </div>
+                                        <h4 class="home-product-item__heading">
+                                            Sản phẩm làm trắng da 100%
+                                        </h4>
+
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-original">1.000.000
+                                                <span class="home-product-item-price-deparate"></span>
+                                            </span>
+                                            <span class="home-product-item-price-curremt">500.000</span>
+
+
+                                        </div>
+
+                                        <div class="home-product-item-favourate">
+                                            <div class="home-product-item-heart">
+                                                <i class="fa-regular fa-heart"
+                                                    style="color: #df5920; margin-top: -1px; "></i>
+                                            </div>
+
+                                            <div class="home-product-item-start">
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <div>
+                                                    <p style="font-size: 1.2rem; margin: -3px 0 0 5px;">Đã bán 80</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="icon-favourate">
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="icon-discount">
+                                            <span class="icon-discount__label-percent">40%</span>
+                                            <span class="icon-discount__sale">Giảm</span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6 ">
+
+                                    <div class="home-product-item">
+                                        <div class="home-product__item-img"
+                                            style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);">
+                                        </div>
+                                        <h4 class="home-product-item__heading">
+                                            Sản phẩm làm trắng da 100%
+                                        </h4>
+
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-original">1.000.000
+                                                <span class="home-product-item-price-deparate"></span>
+                                            </span>
+                                            <span class="home-product-item-price-curremt">500.000</span>
+
+
+                                        </div>
+
+                                        <div class="home-product-item-favourate">
+                                            <div class="home-product-item-heart">
+                                                <i class="fa-regular fa-heart"
+                                                    style="color: #df5920; margin-top: -1px; "></i>
+                                            </div>
+
+                                            <div class="home-product-item-start">
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <div>
+                                                    <p style="font-size: 1.2rem; margin: -3px 0 0 5px;">Đã bán 80</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="icon-favourate">
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="icon-discount">
+                                            <span class="icon-discount__label-percent">40%</span>
+                                            <span class="icon-discount__sale">Giảm</span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+
+                                    <div class="home-product-item">
+                                        <div class="home-product__item-img"
+                                            style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);">
+                                        </div>
+                                        <h4 class="home-product-item__heading">
+                                            Sản phẩm làm trắng da 100%
+                                        </h4>
+
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-original">1.000.000
+                                                <span class="home-product-item-price-deparate"></span>
+                                            </span>
+                                            <span class="home-product-item-price-curremt">500.000</span>
+
+
+                                        </div>
+
+                                        <div class="home-product-item-favourate">
+                                            <div class="home-product-item-heart">
+                                                <i class="fa-regular fa-heart"
+                                                    style="color: #df5920; margin-top: -1px; "></i>
+                                            </div>
+
+                                            <div class="home-product-item-start">
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <div>
+                                                    <p style="font-size: 1.2rem; margin: -3px 0 0 5px;">Đã bán 80</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="icon-favourate">
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="icon-discount">
+                                            <span class="icon-discount__label-percent">40%</span>
+                                            <span class="icon-discount__sale">Giảm</span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+
+                                    <div class="home-product-item">
+                                        <div class="home-product__item-img"
+                                            style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);">
+                                        </div>
+                                        <h4 class="home-product-item__heading">
+                                            Sản phẩm làm trắng da 100%
+                                        </h4>
+
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-original">1.000.000
+                                                <span class="home-product-item-price-deparate"></span>
+                                            </span>
+                                            <span class="home-product-item-price-curremt">500.000</span>
+
+
+                                        </div>
+
+                                        <div class="home-product-item-favourate">
+                                            <div class="home-product-item-heart">
+                                                <i class="fa-regular fa-heart"
+                                                    style="color: #df5920; margin-top: -1px; "></i>
+                                            </div>
+
+                                            <div class="home-product-item-start">
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <i class="fa-regular fa-star"
+                                                    style="color: #FFD43B;font-size: 0.8rem;"></i>
+                                                <div>
+                                                    <p style="font-size: 1.2rem; margin: -3px 0 0 5px;">Đã bán 80</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="icon-favourate">
+                                            Yêu thích
+                                        </div>
+
+                                        <div class="icon-discount">
+                                            <span class="icon-discount__label-percent">40%</span>
+                                            <span class="icon-discount__sale">Giảm</span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
 
-                            <div class="grid-col-10-2">
-    
-                                <div class="home-product-item">
-                                    <div class="home-product__item-img" style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);"></div>
-                                <h4 class="home-product-item__heading">
-                                    Sản phẩm làm trắng da 100%
-                                </h4>
-
-                                <div class="home-product-item-price">
-                                    <span class="home-product-item-price-original" >1.000.000
-                                        <span class="home-product-item-price-deparate"></span>
-                                    </span>
-                                    <span class="home-product-item-price-curremt">500.000</span>
-
-
-                                </div>
-
-                                <div class="home-product-item-favourate">
-                                    <div class="home-product-item-heart">
-                                        <i class="fa-regular fa-heart" style="color: #df5920;"></i>
-                                    </div>
-
-                                    <div class="home-product-item-start">
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    </div>
-                                </div>
-                                </div>
-
-                            </div>
-
-                            <div class="grid-col-10-2">
-    
-                                <div class="home-product-item">
-                                    <div class="home-product__item-img" style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);"></div>
-                                <h4 class="home-product-item__heading">
-                                    Sản phẩm làm trắng da 100%
-                                </h4>
-
-                                <div class="home-product-item-price">
-                                    <span class="home-product-item-price-original" >1.000.000
-                                        <span class="home-product-item-price-deparate"></span>
-                                    </span>
-                                    <span class="home-product-item-price-curremt">500.000</span>
-
-
-                                </div>
-
-                                <div class="home-product-item-favourate">
-                                    <div class="home-product-item-heart">
-                                        <i class="fa-regular fa-heart" style="color: #df5920;"></i>
-                                    </div>
-
-                                    <div class="home-product-item-start">
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    </div>
-                                </div>
-                                </div>
-
-                            </div>
-
-                            <div class="grid-col-10-2">
-    
-                                <div class="home-product-item">
-                                    <div class="home-product__item-img" style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);"></div>
-                                <h4 class="home-product-item__heading">
-                                    Sản phẩm làm trắng da 100%
-                                </h4>
-
-                                <div class="home-product-item-price">
-                                    <span class="home-product-item-price-original" >1.000.000
-                                        <span class="home-product-item-price-deparate"></span>
-                                    </span>
-                                    <span class="home-product-item-price-curremt">500.000</span>
-
-
-                                </div>
-
-                                <div class="home-product-item-favourate">
-                                    <div class="home-product-item-heart">
-                                        <i class="fa-regular fa-heart" style="color: #df5920;"></i>
-                                    </div>
-
-                                    <div class="home-product-item-start">
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    </div>
-                                </div>
-                                </div>
-
-                            </div>
-
-                            <div class="grid-col-10-2">
-    
-                                <div class="home-product-item">
-                                    <div class="home-product__item-img" style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);"></div>
-                                <h4 class="home-product-item__heading">
-                                    Sản phẩm làm trắng da 100%
-                                </h4>
-
-                                <div class="home-product-item-price">
-                                    <span class="home-product-item-price-original" >1.000.000
-                                        <span class="home-product-item-price-deparate"></span>
-                                    </span>
-                                    <span class="home-product-item-price-curremt">500.000</span>
-
-
-                                </div>
-
-                                <div class="home-product-item-favourate">
-                                    <div class="home-product-item-heart">
-                                        <i class="fa-regular fa-heart" style="color: #df5920;"></i>
-                                    </div>
-
-                                    <div class="home-product-item-start">
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    </div>
-                                </div>
-                                </div>
-
-                            </div>
-                            </div>
-
-                            <div class="grid-row">
-                                <div class="grid-col-10-2">
-    
-                                <div class="home-product-item">
-                                    <div class="home-product__item-img" style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);"></div>
-                                <h4 class="home-product-item__heading">
-                                    Sản phẩm làm trắng da 100%
-                                </h4>
-
-                                <div class="home-product-item-price">
-                                    <span class="home-product-item-price-original" >1.000.000
-                                        <span class="home-product-item-price-deparate"></span>
-                                    </span>
-                                    <span class="home-product-item-price-curremt">500.000</span>
-
-
-                                </div>
-
-                                <div class="home-product-item-favourate">
-                                    <div class="home-product-item-heart">
-                                        <i class="fa-regular fa-heart" style="color: #df5920;"></i>
-                                    </div>
-
-                                    <div class="home-product-item-start">
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    </div>
-                                </div>
-                                </div>
-
-                            </div>
-
-                            <div class="grid-col-10-2">
-    
-                                <div class="home-product-item">
-                                    <div class="home-product__item-img" style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);"></div>
-                                <h4 class="home-product-item__heading">
-                                    Sản phẩm làm trắng da 100%
-                                </h4>
-
-                                <div class="home-product-item-price">
-                                    <span class="home-product-item-price-original" >1.000.000
-                                        <span class="home-product-item-price-deparate"></span>
-                                    </span>
-                                    <span class="home-product-item-price-curremt">500.000</span>
-
-
-                                </div>
-
-                                <div class="home-product-item-favourate">
-                                    <div class="home-product-item-heart">
-                                        <i class="fa-regular fa-heart" style="color: #df5920;"></i>
-                                    </div>
-
-                                    <div class="home-product-item-start">
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    </div>
-                                </div>
-                                </div>
-
-                            </div>
-
-                            <div class="grid-col-10-2">
-    
-                                <div class="home-product-item">
-                                    <div class="home-product__item-img" style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);"></div>
-                                <h4 class="home-product-item__heading">
-                                    Sản phẩm làm trắng da 100%
-                                </h4>
-
-                                <div class="home-product-item-price">
-                                    <span class="home-product-item-price-original" >1.000.000
-                                        <span class="home-product-item-price-deparate"></span>
-                                    </span>
-                                    <span class="home-product-item-price-curremt">500.000</span>
-
-
-                                </div>
-
-                                <div class="home-product-item-favourate">
-                                    <div class="home-product-item-heart">
-                                        <i class="fa-regular fa-heart" style="color: #df5920;"></i>
-                                    </div>
-
-                                    <div class="home-product-item-start">
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    </div>
-                                </div>
-                                </div>
-
-                            </div>
-
-                            <div class="grid-col-10-2">
-    
-                                <div class="home-product-item">
-                                    <div class="home-product__item-img" style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);"></div>
-                                <h4 class="home-product-item__heading">
-                                    Sản phẩm làm trắng da 100%
-                                </h4>
-
-                                <div class="home-product-item-price">
-                                    <span class="home-product-item-price-original" >1.000.000
-                                        <span class="home-product-item-price-deparate"></span>
-                                    </span>
-                                    <span class="home-product-item-price-curremt">500.000</span>
-
-
-                                </div>
-
-                                <div class="home-product-item-favourate">
-                                    <div class="home-product-item-heart">
-                                        <i class="fa-regular fa-heart" style="color: #df5920;"></i>
-                                    </div>
-
-                                    <div class="home-product-item-start">
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    </div>
-                                </div>
-                                </div>
-
-                            </div>
-
-                            <div class="grid-col-10-2">
-    
-                                <div class="home-product-item">
-                                    <div class="home-product__item-img" style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);"></div>
-                                <h4 class="home-product-item__heading">
-                                    Sản phẩm làm trắng da 100%
-                                </h4>
-
-                                <div class="home-product-item-price">
-                                    <span class="home-product-item-price-original" >1.000.000
-                                        <span class="home-product-item-price-deparate"></span>
-                                    </span>
-                                    <span class="home-product-item-price-curremt">500.000</span>
-
-
-                                </div>
-
-                                <div class="home-product-item-favourate">
-                                    <div class="home-product-item-heart">
-                                        <i class="fa-regular fa-heart" style="color: #df5920;"></i>
-                                    </div>
-
-                                    <div class="home-product-item-start">
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    </div>
-                                </div>
-                                </div>
-
-                            </div>
-                            </div>
-
-                            <div class="grid-row">
-                                <div class="grid-col-10-2">
-    
-                                <div class="home-product-item">
-                                    <div class="home-product__item-img" style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);"></div>
-                                <h4 class="home-product-item__heading">
-                                    Sản phẩm làm trắng da 100%
-                                </h4>
-
-                                <div class="home-product-item-price">
-                                    <span class="home-product-item-price-original" >1.000.000
-                                        <span class="home-product-item-price-deparate"></span>
-                                    </span>
-                                    <span class="home-product-item-price-curremt">500.000</span>
-
-
-                                </div>
-
-                                <div class="home-product-item-favourate">
-                                    <div class="home-product-item-heart">
-                                        <i class="fa-regular fa-heart" style="color: #df5920;"></i>
-                                    </div>
-
-                                    <div class="home-product-item-start">
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    </div>
-                                </div>
-                                </div>
-
-                            </div>
-
-                            <div class="grid-col-10-2">
-    
-                                <div class="home-product-item">
-                                    <div class="home-product__item-img" style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);"></div>
-                                <h4 class="home-product-item__heading">
-                                    Sản phẩm làm trắng da 100%
-                                </h4>
-
-                                <div class="home-product-item-price">
-                                    <span class="home-product-item-price-original" >1.000.000
-                                        <span class="home-product-item-price-deparate"></span>
-                                    </span>
-                                    <span class="home-product-item-price-curremt">500.000</span>
-
-
-                                </div>
-
-                                <div class="home-product-item-favourate">
-                                    <div class="home-product-item-heart">
-                                        <i class="fa-regular fa-heart" style="color: #df5920;"></i>
-                                    </div>
-
-                                    <div class="home-product-item-start">
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    </div>
-                                </div>
-                                </div>
-
-                            </div>
-
-                            <div class="grid-col-10-2">
-    
-                                <div class="home-product-item">
-                                    <div class="home-product__item-img" style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);"></div>
-                                <h4 class="home-product-item__heading">
-                                    Sản phẩm làm trắng da 100%
-                                </h4>
-
-                                <div class="home-product-item-price">
-                                    <span class="home-product-item-price-original" >1.000.000
-                                        <span class="home-product-item-price-deparate"></span>
-                                    </span>
-                                    <span class="home-product-item-price-curremt">500.000</span>
-
-
-                                </div>
-
-                                <div class="home-product-item-favourate">
-                                    <div class="home-product-item-heart">
-                                        <i class="fa-regular fa-heart" style="color: #df5920;"></i>
-                                    </div>
-
-                                    <div class="home-product-item-start">
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    </div>
-                                </div>
-                                </div>
-
-                            </div>
-
-                            <div class="grid-col-10-2">
-    
-                                <div class="home-product-item">
-                                    <div class="home-product__item-img" style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);"></div>
-                                <h4 class="home-product-item__heading">
-                                    Sản phẩm làm trắng da 100%
-                                </h4>
-
-                                <div class="home-product-item-price">
-                                    <span class="home-product-item-price-original" >1.000.000
-                                        <span class="home-product-item-price-deparate"></span>
-                                    </span>
-                                    <span class="home-product-item-price-curremt">500.000</span>
-
-
-                                </div>
-
-                                <div class="home-product-item-favourate">
-                                    <div class="home-product-item-heart">
-                                        <i class="fa-regular fa-heart" style="color: #df5920;"></i>
-                                    </div>
-
-                                    <div class="home-product-item-start">
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    </div>
-                                </div>
-                                </div>
-
-                            </div>
-
-                            <div class="grid-col-10-2">
-    
-                                <div class="home-product-item">
-                                    <div class="home-product__item-img" style="background-image:  url(https://th.bing.com/th/id/OIP.0QmgAqqOTe295Byh5CCGKAAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);"></div>
-                                <h4 class="home-product-item__heading">
-                                    Sản phẩm làm trắng da 100%
-                                </h4>
-
-                                <div class="home-product-item-price">
-                                    <span class="home-product-item-price-original" >1.000.000
-                                        <span class="home-product-item-price-deparate"></span>
-                                    </span>
-                                    <span class="home-product-item-price-curremt">500.000</span>
-
-
-                                </div>
-
-                                <div class="home-product-item-favourate">
-                                    <div class="home-product-item-heart">
-                                        <i class="fa-regular fa-heart" style="color: #df5920;"></i>
-                                    </div>
-
-                                    <div class="home-product-item-start">
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                    </div>
-                                </div>
-                                </div>
-
-                            </div>
-                            </div>
+
+
+                        </div>
+
+                        <div class="home-pagination" style="display: flex;">
+                            <ul class="pagination">
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item-link">
+                                        <i class="fa-solid fa-angle-left " style="line-height: 1.6rem;"></i>
+
+                                    </a>
+                                </li>
+
+                                <li class="pagination-item ">
+                                    <a href="" class="pagination-item-link pagination-item-active">1</a>
+
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item-link">2</a>
+
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item-link">3</a>
+
+                                </li>
+
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item-link">4</a>
+
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item-link">...</a>
+
+
+                                </li>
+
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item-link">10</a>
+
+                                </li>
+
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item-link">
+                                        <i class="fa-solid fa-angle-right " style="line-height: 1.6rem;"></i>
+
+                                    </a>
+
+                                </li>
+
+                            </ul>
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
+
+        <footer style="padding: 10px;">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
+                        <h4 class="footer__heading">Chăm sóc khách hàng</h4>
+                        <ul class="footer__list">
+                            <li class="footer__item">Trung tâm trợ</li>
+                            <li class="footer__item">Phúc shop Mail</li>
+                            <li class="footer__item">Hướng dẫn khách hàng</li>
+                        </ul>
+                    </div>
+
+                    <div class="col l-2 m-4 c-6">
+                        <h4 class="footer__heading">Giới thiệu</h4>
+                        <ul class="footer__list">
+                            <li class="footer__item">Giới thiệu</li>
+                            <li class="footer__item">Tuyển dụng</li>
+                            <li class="footer__item">Điều khoản</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col l-2 m-4 c-6">
+                        <h4 class="footer__heading">Danh mục</h4>
+                        <ul class="footer__list">
+                            <li class="footer__item">Trang sức </li>
+                            <li class="footer__item">Đá quý</li>
+                            <li class="footer__item">Mỹ phẩm</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col l-2 m-4 c-6">
+                        <h4 class="footer__heading">Theo dõi</h4>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <i class="fa-brands fa-facebook"></i>
+                                Fackbook
+                            </li>
+                            <li class="footer__item">
+                                <i class="fa-brands fa-instagram"></i>
+                                Instagram
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col l-2 m-4 c-12">
+                        <h4 class="footer__heading">Vào cửa hàng trên ứng dụng</h4>
+                        <div class="footer__access">
+                            <img src="asset/img/QRcode.png" alt="" style="width: 100px;">
+                            <div class="footer__access-app">
+                                <img class="footer__access-app-img" src="asset/img/googleplay.png">
+
+                                </img>
+
+                                <img class="footer__access-app-img" src="asset/img/appstore.png">
+
+                                </img>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="fooder__desginer" style="margin:30px 0; color: rgb(175, 179, 183); display: flex;">
+                    <span style="margin:  0 auto ; font-size: 1.6rem;">@2024 - Shopee-Demo is Powered by Phuc </span>
+                </div>
+
+
+            </div>
+        </footer>
+
     </div>
 
 
@@ -853,27 +1402,38 @@
         function signup() {
             var modal = document.getElementById('idModalSignup')
             var modal_inner = document.getElementById('idModal__innerSignup');
+            modal_inner.style.animation = 'growth linear 0.3s '
+
             modal.style.visibility = 'visible'
-            modal_inner.style.animation = 'growth  0.3s'
+
 
         }
-     
+
         function signin() {
             var modal = document.getElementById('idModalSignin')
             var modal_inner = document.getElementById('idModal__innerSignin');
-            modal.style.visibility = 'visible'
+            modal_inner.style.animation = 'none'; // Remove animation
+            modal.offsetHeight;
             modal_inner.style.animation = 'growth linear 0.3s '
+            modal.style.visibility = 'visible'
+
         }
 
         function exit_auth(type) {
             var modal = document.getElementById(type)
+            var modal_inner = document.getElementById(type);
+
             modal.style.visibility = 'hidden'
+
         }
     </script>
 
 
 
 </body>
+
+
+
 
 
 </html>
